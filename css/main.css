@@ -1,33 +1,86 @@
 /* Place CSS styles here */
-.full-resume {
-    max-width: 500px;
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+<style>
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .header {
+    background-color: #abcce0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #8ea9bb;
+  }
+  
+  
+  .column {
+    float: left;
+    width: 50%;
+    padding: 15px;
+  }
+  
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  </style>
+
+.body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+.full-poster {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.type-variations {
+    justify-content: left;
+}
+.title{
+    display: flex;
+    justify-content: right;
+    max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.history {
+    display: flex;
+    justify-content: right;
+    max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.information {
+    display: flex;
+    justify-content: right;
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
 }
-.my-title {
-    display: flex; 
-    justify-content: center;
-}
 .title {
-    color:rgb(115, 154, 190);
-}
-.about-me-title {
-    color:rgb(55, 96, 135) ;
-}
-.contact-title {
-    color:rgb(55, 96, 135) ;
-}
-.skills-title {
-    color:rgb(55, 96, 135) ;
-}
-.education-and-achievements-title {
-    color:rgb(55, 96, 135)
-}
-.employment-and-activities-title {
-    color:rgb(55, 96, 135)
-}
-body{
-    font-family: "EB Garamond", serif;
-    background-color:rgb(240, 238, 236);
-    color:rgb(17, 32, 55);
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }

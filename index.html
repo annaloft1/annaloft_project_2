@@ -1,102 +1,207 @@
-<!doctype html>
-<html class="no-js" lang="en">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Responsive Layouts</title>
-  <meta name="description" content="This site will serve as the hub for many sub responsive layouts">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS Website Layout</title>
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+body {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#1d2b34 
+}
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+.header {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  color: #1d2b34;
+  background-color: #abcce0;
+  padding: 20px;
+  text-align: center;
+}
 
-  <meta name="theme-color" content="#fafafa">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+.topnav {
+  max-width: 800px;
+  display: flex; 
+    justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-size: 50px;
+  overflow: hidden;
+  color: #abcce0; 
+  background-color: #1d2b34; 
+}
+
+
+.column {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  padding: 15px;
+  color: rgb(220, 233, 241)
+}
+.one {
+  font-weight: 100;
+}
+.two {
+  font-weight: 100;
+  font-style: italic;
+}
+.three {
+  font-weight: 200;
+}
+.four {
+  font-weight: 200;
+  font-style: italic;
+}
+.five {
+  font-weight: 300;
+}
+.six {
+  font-weight: 300;
+  font-style: italic;
+}.seven {
+  font-weight: 400;
+}
+.eight {
+  font-weight: 400;
+  font-style: italic;
+}.nine {
+  font-weight: 500;
+}
+.ten {
+  font-weight: 500;
+  font-style: italic;
+}.eleven {
+  font-weight: 600;
+}
+.twelve {
+  font-weight: 600;
+  font-style: italic;
+}.thirteen {
+  font-weight: 700;
+}
+.fourteen {
+  font-weight: 700;
+  font-style: italic;
+}.fifteen {
+  font-weight: 800;
+}
+.sixteen {
+  font-weight: 800;
+  font-style: italic;
+}.seventeen {
+  font-weight: 900;
+}
+.eighteen {
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+.row::after {
+  font-family: "Montserrat", sans-serif;
+  content: "";
+  display: table;
+  clear: both;
+  color: rgb(220, 233, 241)
+}
+.designer {
+  font-weight:600
+}
+.name {
+  font-weight: 500
+}
+.foundry {
+  font-weight:600
+}
+.sky {
+  font-weight: 500
+}
+.date {
+  font-weight:600
+}
+.thousand {
+  font-weight: 500
+}
+.sans {
+  font-weight:600
+}
+.classification {
+  font-weight: 500
+}
+.geometric {
+  font-weight:600
+}
+
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <!-- Place your site's HTML here -->
-  <div class="full-resume">
-    <div class="title">
-  <h1 class="my-title"><strong>ANNA LOFT RESUME</strong></h1><br>
-  <script src="js/main.js"></script>
+
+ 
+<div class="header">
+  <h1>MONTSERRAT</h1>
+</div>
+
+<div class="topnav">
+  <p>!@#$%&?</p>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="one"><p>The quick brown fox</p></div>
+    <div class="two"><p>The quick brown fox</p></div>
+    <div class="three"><p>The quick brown fox</p></div>
+    <div class="four"><p>The quick brown fox</p></div>
+    <div class="five"><p>The quick brown fox</p></div>
+    <div class="six"><p>The quick brown fox</p></div>
+    <div class="seven"><p>The quick brown fox</p></div>
+    <div class="eight"><p>The quick brown fox</p></div>
+    <div class="nine"><p>The quick brown fox</p></div>
+    <div class="ten"><p>The quick brown fox</p></div>
+    <div class="eleven"><p>The quick brown fox</p></div>
+    <div class="twelve"><p>The quick brown fox</p></div>
+    <div class="thirteen"><p>The quick brown fox</p></div>
+    <div class="fourteen"><p>The quick brown fox</p></div>
+    <div class="fifteen"><p>The quick brown fox</p></div>
+    <div class="sixteen"><p>The quick brown fox</p></div>
+    <div class="seventeen"><p>The quick brown fox</p></div>
+    <div class="eighteen"><p>The quick brown fox</p></div>
+
+  </div>
+  
+  <div class="column">
+    <p>Montserrat is a geometric sans-serif typeface designed by Argentine graphic designer Julieta Ulanovsky and released in 2011. It was inspired by posters, signs, and painted windows from the first half of the twentieth century, seen in the historic Montserrat neighborhood of Buenos Aires.</p>
+    <p>Featuring a large x-height, short descenders and wide apertures, this typeface achieves high legibility even in small sizes.
+      Montserrat has been developed into a large family, consisting of nine weights (from Thin to Black), a set of alternate characters, a distinctive Subrayada variant, and support for the  Cyrillic character set.</p>
+      <div class="designer"><p>DESIGNER</p></div>
+      <div class="name"><p>JULIETA ULANOVSKY</p></div>
+      <div class="foundry"><p>FOUNDRY</p></div>
+      <div class="sky"><p>ZKYSKY</p></div>
+      <div class="date"><p>DATE CREATED</p></div>
+      <div class="thousand"><p>2010</p></div>
+      <div class="sans"><p>SANS SERIF</p></div>
+      <div class="classification"><p>CLASSIFICATION</p></div>
+      <div class="geometric"><p>GEOMETRIC</p></div>
     </div>
-</body>
-<div class="about-me">
-  <div class="about-me-title">
-<h3><em>ABOUT ME</em></h3>
-  </div>
-  <p>Hi! My name is Anna and I’m currently a junior at LSU working towards a BFA in graphic design. I have been a creative person since I was a child and have found my passion in graphic design. Whether it’s branding, typography, or illustration, I pour my heart into every project I take on. I am always trying to step out of my comfort zone and try new things, and am eager to collaborate with others and learn something new.</p>
-  </div>
-  <hr>
-  <div class="contact">
-    <div class="contact-title">
-  <h3><em>CONTACT</em></h3>
+  
 </div>
-<ul>
-    <li><a
-  href="https://annaloft.com">Website</a></li>
-    <li><a
-  href="mailto:acloft3@icloud.com">E-mail</a></li>
-  <li><a
-  href="tel:+18328178118">Phone</a></li>
-</ul>
-<hr>
-</div>
-<div class="skills">
-  <div class="skills-title"
-<h3></h3>
-<h3><em>SKILLS</em></h3>
-</div>
-<ul> <p>Proficiency in design software (Adobe creative suite, Procreate, Canva), typography and layout design, advertising, app design, drawing and illustration, social media advertising/identity, branding identity and design, UI/UX design, web design, and packaging design.</p>
-  <p>Efficient in communicating with clients and understanding creative visions; able to bring a fresh and unique look to design, a love of physical drawing allows me to combine digital art with handmade design, which cultivates a distinctive and unique composition.</p>
-</ul>
- <hr>
- </div>
- <div class="education-and-achievements">
-  <div class="education-and-achievements-title">
-  <h3><em>EDUCATION AND ACHIEVEMENTS</em></h3>
-</div>
-  <dl><ul>
-    <dt>Louisiana State University</dt>
-    <dd>College of Art and Design</dd>
-    <dd>BFA in Graphic Design</dd>
-    <dt>Presidents Honor Roll & Dean's List</dt>
-    <dt>Transformation Merit Scholarship</dt>
-    <dt>Tiger Alumni Legacy Scholarship</dt>
-  </dl></ul>
-    </p>
-    </ul><p>
-    <hr>
-  </div>
-  <div class="employment-and-activities">
-    <div class="employment-and-activities-title">
-    <h3><em>EMPLOYMENT AND ACTIVITIES</em></h3>
-    </div>
-<ul><h5>DRAWING INSTITUTE OPERATIONS ASSOCIATE</h5>
-        <p>Worked at the Menil Drawing Institute in Houston and was responsible for the smooth functioning of various operational aspects in the institute. Worked closely with exhibit instillations and maintenance and assisted with security and visitor experience by providing information and assistance as needed.</p>
-    <h5>OWNER AND OPERATOR: ETSY SHOP</h5>
-        <p>Entrepreneurial Experience; Established and manage a thriving online shop specializing in painting customized champagne bottles for special events. Developed marketing strategies to drive traffic and increase sales, demonstrated strong business insight by handling all aspects of operations, including product sourcing, inventory management, order fulfillment, and customer service.</p>
-    <h5>FREELANCE WORK</h5>
-        <p>Has worked with multiple customers to help bring their graphic design needs to fruition, including e-mail infographics for businesses, blog logo and banner design, social media infographics and posts, custom party cups, fans, and napkins, and custom music posters for interior decoration.</p>
-</ul> 
-</div>
-<div class="image">
-<ul>  
-<img src="https://images.squarespace-cdn.com/content/v1/65df56f0a5c74b57fa9503e9/79f1f6f5-f008-4ffb-8bc4-28be60662c9c/Design+Is+Collage+2.JPEG?format=1500w" width="500" height="375" alt="Design Is Collage" />
-</ul> 
-</div>
-</div>
+
 </body>
 </html>
